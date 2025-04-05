@@ -42,7 +42,6 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 ## 🧠 Technology Stack
 
 ### 🔧 Backend
-### 🔧 Backend
 - **FastAPI** – High-performance Python web API framework
 - **Snowflake** – Real-time, cloud-native data warehouse
 - **Prophet** – ML-based time series forecasting for liquidity projection
