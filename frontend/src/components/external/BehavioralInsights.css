@@ -1,0 +1,323 @@
+.behavioral-insights-container {
+    width: 100%;
+  }
+  
+  .no-insights-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  .no-insights-message i {
+    font-size: 3rem;
+    opacity: 0.5;
+    margin-bottom: 16px;
+  }
+  
+  .insights-header {
+    margin-bottom: 24px;
+  }
+  
+  .insights-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+  }
+  
+  .insights-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .ai-insight-card,
+  .mood-distribution-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+  }
+  
+  .insight-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .insight-card-header i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .insight-card-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .insight-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+  }
+  
+  .mood-distribution-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .chart-container {
+    height: 200px;
+  }
+  
+  .behavioral-biases {
+    margin-bottom: 24px;
+  }
+  
+  .behavioral-biases h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .biases-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  .bias-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .bias-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .bias-header h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .impact-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .impact-badge.high {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+  }
+  
+  .impact-badge.medium {
+    background-color: rgba(255, 171, 0, 0.1);
+    color: var(--warning-color);
+  }
+  
+  .impact-badge.low {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+  }
+  
+  .bias-description {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+  }
+  
+  .bias-recommendation {
+    display: flex;
+    gap: 12px;
+    background-color: rgba(106, 17, 203, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .bias-recommendation i {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 3px;
+  }
+  
+  .bias-recommendation p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .action-breakdown {
+    margin-bottom: 24px;
+  }
+  
+  .action-breakdown h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .action-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #ccc;
+  }
+  
+  .action-card.mood-confident {
+    border-top-color: #4caf50;
+  }
+  
+  .action-card.mood-neutral {
+    border-top-color: #2196f3;
+  }
+  
+  .action-card.mood-anxious {
+    border-top-color: #f44336;
+  }
+  
+  .action-card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+  }
+  
+  .action-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .action-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
+  
+  .stat-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .market-correlation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+  }
+  
+  .correlation-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
+  
+  .correlation-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .correlation-value.positive {
+    color: var(--accent-color);
+  }
+  
+  .correlation-value.negative {
+    color: var(--danger-color);
+  }
+  
+  .insights-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: rgba(106, 17, 203, 0.05);
+  }
+  
+  .action-btn i {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .insights-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .biases-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .action-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .insights-actions {
+      flex-direction: column;
+    }
+    
+    .action-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }

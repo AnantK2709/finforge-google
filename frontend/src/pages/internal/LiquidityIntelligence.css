@@ -1,0 +1,108 @@
+.liquidity-container {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .page-header {
+    margin-bottom: 24px;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .client-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .client-selector label {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .client-selector select {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
+    min-width: 200px;
+  }
+  
+  .client-info-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-left: auto;
+  }
+  
+  .client-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .client-assets {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .liquidity-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .liquidity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .chart-container {
+    min-height: 300px;
+  }
+  
+  .balance-line {
+    stroke-dasharray: 5 5;
+  }
+  
+  .threshold-line {
+    stroke-dasharray: 3 3;
+    stroke: #f44336;
+  }
+  
+  @media (max-width: 1200px) {
+    .liquidity-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .client-selector {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .client-info-pill {
+      margin-left: 0;
+    }
+  }

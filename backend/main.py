@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime
-from mood_utils import classify_mood
-from portfolio_utils import get_portfolio_context
-from snowflake_utils import insert_mood_log_snowflake
+from backend.mood_utils import classify_mood
+from backend.portfolio_utils import get_portfolio_context
+from backend.snowflake_utils import insert_mood_log_snowflake
 # ✅ Run this using: uvicorn main:app
 import re
 import json
@@ -19,7 +19,7 @@ import requests
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
-from groq_utils import call_groq_behavior_insight
+from backend.groq_utils import call_groq_behavior_insight
 import snowflake.connector
 
 app = FastAPI()

@@ -1,0 +1,247 @@
+.credit-suggestions-container {
+    width: 100%;
+  }
+  
+  .no-data-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  .no-data-message i {
+    font-size: 3rem;
+    opacity: 0.5;
+    margin-bottom: 16px;
+  }
+  
+  .credit-intro {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    background-color: rgba(33, 150, 243, 0.05);
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .suggestion-icon {
+    font-size: 2rem;
+    color: #2196f3;
+  }
+  
+  .intro-text h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .intro-text p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+  
+  .suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .suggestion-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .suggestion-card.expanded {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .suggestion-title h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .suggestion-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+  
+  .rate {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+  
+  .term {
+    color: var(--text-secondary);
+  }
+  
+  .suggestion-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .amount-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .amount-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  .suggestion-details {
+    margin-top: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+    overflow: hidden;
+  }
+  
+  .details-section {
+    margin-bottom: 16px;
+  }
+  
+  .detail-row {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .detail-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 100px;
+    color: var(--text-secondary);
+  }
+  
+  .detail-value {
+    font-size: 0.9rem;
+  }
+  
+  .details-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .benefits-section h5,
+  .considerations-section h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+  }
+  
+  .details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefit-item,
+  .consideration-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .benefit-item i {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  
+  .consideration-item i {
+    color: var(--warning-color);
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  
+  .suggestion-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .expand-indicator {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+  }
+  
+  .suggestion-card.expanded .expand-indicator {
+    transform: rotate(180deg);
+  }
+  
+  .suggestions-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  
+  .btn-secondary {
+    background-color: #f5f5f5;
+    color: var(--text-primary);
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .btn i {
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .credit-intro {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .suggestion-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .suggestion-amount {
+      align-items: flex-start;
+    }
+    
+    .details-columns {
+      grid-template-columns: 1fr;
+    }
+    
+    .suggestion-actions,
+    .suggestions-footer {
+      flex-direction: column;
+    }
+    
+    .suggestions-footer button {
+      width: 100%;
+    }
+  }

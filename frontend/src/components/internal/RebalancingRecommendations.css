@@ -1,0 +1,173 @@
+.rebalancing-recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .no-recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  .no-recommendations i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+  
+  .recommendation-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #ccc;
+  }
+  
+  .recommendation-card.high {
+    border-left-color: var(--danger-color);
+  }
+  
+  .recommendation-card.medium {
+    border-left-color: var(--warning-color);
+  }
+  
+  .recommendation-card.low {
+    border-left-color: var(--accent-color);
+  }
+  
+  .recommendation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .recommendation-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .recommendation-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .priority-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .priority-badge.high {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+  }
+  
+  .priority-badge.medium {
+    background-color: rgba(255, 171, 0, 0.1);
+    color: var(--warning-color);
+  }
+  
+  .priority-badge.low {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: var(--accent-color);
+  }
+  
+  .recommendation-details {
+    margin-bottom: 16px;
+  }
+  
+  .amount-pill {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .amount-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-right: 4px;
+  }
+  
+  .amount-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .recommendation-reason {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  
+  .recommendation-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .action-btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .action-btn.primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .action-btn.secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .action-btn.secondary:hover {
+    background-color: rgba(106, 17, 203, 0.05);
+  }
+  
+  .action-btn.tertiary {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid #ddd;
+  }
+  
+  .action-btn.tertiary:hover {
+    background-color: #f5f5f5;
+  }
+  
+  @media (max-width: 768px) {
+    .recommendation-header {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .priority-badge {
+      align-self: flex-start;
+    }
+    
+    .recommendation-actions {
+      flex-wrap: wrap;
+    }
+  }

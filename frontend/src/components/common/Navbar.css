@@ -1,0 +1,181 @@
+.navbar {
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar.internal {
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    color: white;
+  }
+  
+  .navbar.external {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  
+  .fin {
+    color: var(--primary-color);
+  }
+  
+  .navbar.internal .fin,
+  .navbar.external .fin {
+    color: white;
+  }
+  
+  .sentient {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .navbar.internal .sentient,
+  .navbar.external .sentient {
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .portal-badge {
+    font-size: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-bar {
+    position: relative;
+    width: 300px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px 16px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+  }
+  
+  .navbar.internal .search-bar input::placeholder,
+  .navbar.external .search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-bar i {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+  }
+  
+  .navbar.internal .search-bar i,
+  .navbar.external .search-bar i {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .icon-container {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .navbar.internal .icon-container,
+  .navbar.external .icon-container {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: var(--danger-color);
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .navbar.internal .profile-icon {
+    background: linear-gradient(to right, #26d0ce, #1a2980);
+  }
+  
+  .profile-initial {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar {
+      display: none;
+    }
+  
+    .navbar-container {
+      padding: 0 16px;
+    }
+  }

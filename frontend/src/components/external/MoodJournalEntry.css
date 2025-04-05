@@ -1,0 +1,221 @@
+.mood-journal-entry {
+    width: 100%;
+  }
+  
+  .mood-selector {
+    margin-bottom: 20px;
+  }
+  
+  .mood-question {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+  }
+  
+  .mood-rating {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .mood-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid #eee;
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    min-width: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .mood-btn:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .mood-btn.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(106, 17, 203, 0.05);
+  }
+  
+  .mood-emoji {
+    font-size: 1.8rem;
+  }
+  
+  .mood-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  
+  .journal-input-container {
+    margin-bottom: 20px;
+  }
+  
+  .textarea-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .textarea-header label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .prompt-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .prompt-btn:hover {
+    background-color: rgba(106, 17, 203, 0.05);
+  }
+  
+  .prompt-btn i {
+    font-size: 0.9rem;
+  }
+  
+  .journal-textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 150px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .journal-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .textarea-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .word-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .submit-btn i {
+    font-size: 0.9rem;
+  }
+  
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .journal-benefits {
+    background-color: rgba(106, 17, 203, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 24px;
+  }
+  
+  .journal-benefits h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  
+  .benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .benefits-list i {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 2px;
+  }
+  
+  .benefits-list span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .mood-rating {
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+    
+    .mood-btn {
+      min-width: 70px;
+    }
+    
+    .benefits-list {
+      grid-template-columns: 1fr;
+    }
+  }

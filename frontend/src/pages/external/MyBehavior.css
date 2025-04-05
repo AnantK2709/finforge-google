@@ -1,0 +1,241 @@
+.behavior-container {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .page-header {
+    margin-bottom: 24px;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .behavior-tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 1px;
+  }
+  
+  .tab-btn {
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .tab-btn i {
+    font-size: 1rem;
+  }
+  
+  .tab-btn:hover {
+    color: var(--primary-color);
+  }
+  
+  .tab-btn.active {
+    color: var(--primary-color);
+  }
+  
+  .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px 3px 0 0;
+  }
+  
+  .tab-content {
+    min-height: 500px;
+  }
+  
+  .journal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .journal-form-container,
+  .recent-entries {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .journal-form-container h2,
+  .recent-entries h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .entries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+  
+  .entry-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #ccc;
+  }
+  
+  .entry-card.mood-confident {
+    border-left-color: var(--accent-color);
+  }
+  
+  .entry-card.mood-neutral {
+    border-left-color: #2196f3;
+  }
+  
+  .entry-card.mood-anxious {
+    border-left-color: var(--danger-color);
+  }
+  
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .entry-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .mood-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .mood-badge.confident {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: var(--accent-color);
+  }
+  
+  .mood-badge.neutral {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+  }
+  
+  .mood-badge.anxious {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+  }
+  
+  .entry-body {
+    margin-bottom: 12px;
+  }
+  
+  .entry-body p {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .entry-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-change,
+  .action-taken {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .label {
+    color: var(--text-secondary);
+  }
+  
+  .value {
+    font-weight: 600;
+  }
+  
+  .value.positive {
+    color: var(--accent-color);
+  }
+  
+  .value.negative {
+    color: var(--danger-color);
+  }
+  
+  .trends-content,
+  .insights-content,
+  .simulator-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 968px) {
+    .journal-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .behavior-tabs {
+      overflow-x: auto;
+    }
+  }
