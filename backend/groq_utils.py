@@ -1,7 +1,7 @@
 import requests
 import json
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = <YOUR_API_KEY>
 
 def call_groq_behavior_insight(user_data: list) -> str:
     url = "https://api.groq.com/openai/v1/chat/completions"
