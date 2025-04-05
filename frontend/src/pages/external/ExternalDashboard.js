@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import './Dashboard.css';
+import './ExternalDashboard.css';
 
 const ExternalDashboard = () => {
   const [portfolioData, setPortfolioData] = useState(null);

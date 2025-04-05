@@ -9,7 +9,7 @@ import PortfolioRiskManagement from './pages/internal/PortfolioRiskManagement';
 import LiquidityIntelligence from './pages/internal/LiquidityIntelligence';
 
 // External Pages
-import ExternalDashboard from './pages/external/Dashboard';
+import ExternalDashboard from './pages/external/ExternalDashboard';
 import MyPortfolioRisk from './pages/external/MyPortfolioRisk';
 import SmartStrategyPlanner from './pages/external/SmartStrategyPlanner';
 import MyBehavior from './pages/external/MyBehavior';
