@@ -39,11 +39,21 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 ## 🧠 Technology Stack
 
 ### 🔧 Backend
-- **FastAPI** — High-performance API backend
-- **Snowflake** — Cloud-native data warehouse for real-time financial data
-- **Prophet** — ML-based time series forecasting
-- **Pydantic** — Data modeling and synthetic data generation
-- **Markowitz Optimization** — Portfolio construction & risk management
+### 🔧 Backend
+- **FastAPI** – High-performance Python web API framework
+- **Snowflake** – Real-time, cloud-native data warehouse
+- **Prophet** – ML-based time series forecasting for liquidity projection
+- **Pydantic** – Data validation and synthetic data generation
+- **Markowitz Model** – Machine learning-based portfolio optimization
+- **Groq API + LLaMA 3** – LLM integration for behavioral & financial insight generation
+- **TextBlob** – NLP-based sentiment analysis for journaling data
+- **Uvicorn** – ASGI server for fast async app deployment
+
+### 🌐 Frontend
+- **React.js** – Modern UI framework with reusable component architecture
+- **Recharts** – Responsive charting for risk, performance, allocation
+- **Framer Motion** – Smooth UI animations and transitions
+- **Tailwind CSS** – Utility-first CSS framework for styling
 
 ### 🌐 Frontend
 - **React.js** — Modern UI with component-based design
