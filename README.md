@@ -29,6 +29,9 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
     - Max 40% per sector
   - Get projections on expected annual return and portfolio volatility.
 
+## 🎥 Demo
+
+
 - **My Behavior**:
   - Journaling feature to capture client emotions/thoughts about investments.
   - NLP-powered sentiment analysis converts entries into behavioral insights.
@@ -44,7 +47,7 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 - **Snowflake** – Real-time, cloud-native data warehouse
 - **Prophet** – ML-based time series forecasting for liquidity projection
 - **Pydantic** – Data validation and synthetic data generation
-- **Markowitz Model** – Machine learning-based portfolio optimization model paired with LLM for user inpt to json creation .
+- **Markowitz Model** – Machine learning-based portfolio optimization model paired with LLM for user input to hyper parameter creation for the model .
 - **Groq API + LLaMA 3** – LLM integration for behavioral & financial insight generation
 - **TextBlob** – NLP-based sentiment analysis for journaling data
 - **Uvicorn** – ASGI server for fast async app deployment
@@ -55,14 +58,7 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 - **Framer Motion** – Smooth UI animations and transitions
 - **Tailwind CSS** – Utility-first CSS framework for styling
 
-### 🌐 Frontend
-- **React.js** — Modern UI with component-based design
-- **Framer Motion** — UI animations and transitions
-- **Recharts** — Data visualization (bar, pie, area, line)
-- **Tailwind CSS** — Utility-first styling
-
 ---
-
 ## 🏗️ Project Structure
 
 ```bash
@@ -114,6 +110,8 @@ npm start
 ```bash
 http://localhost:3000
 ```
+
+
 
 
 🧩 **Key Architecture Highlights**
