@@ -54,6 +54,8 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 ---
 
 ## 🏗️ Project Structure
+
+```bash
 FinSentient/
 ├── backend/                        # FastAPI backend
 │   ├── main.py                    # Main API entry
@@ -80,29 +82,28 @@ FinSentient/
 
 ├── .gitignore
 ├── README.md                     # Project overview and instructions
+```
 
 **Backend Setup (FastAPI)**
-bash
-Copy
-Edit
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload --port 5000
+```
+
 
 **Frontend Setup (React)**
-bash
-Copy
-Edit
+```bash
 cd frontend
 npm install
 npm start
+```
+
 
 **Open in Browser**
-bash
-Copy
-Edit
+```bash
 http://localhost:3000
-
+```
 
 🧩 Key Architecture Highlights
 Real-Time Data: Pulled from Snowflake and visualized in the dashboard.
