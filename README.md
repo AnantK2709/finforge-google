@@ -56,7 +56,7 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 ## 🏗️ Project Structure
 
 ```bash
-FinSentient/
+Finforge-google/
 ├── backend/                        # FastAPI backend
 │   ├── main.py                    # Main API entry
 │   ├── main2.py                   # Experimental or alternate API route
