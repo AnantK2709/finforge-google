@@ -271,7 +271,7 @@ def call_groq_api(message: str) -> dict:
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
+        "Authorization": "Bearer gsk_<YOUR_API_KEY>"
     }
     
     # System message instructs the assistant to extract investment parameters.
