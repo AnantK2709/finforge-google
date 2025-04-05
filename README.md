@@ -54,4 +54,63 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 ---
 
 ## 🏗️ Project Structure
+FinSentient/
+├── backend/                        # FastAPI backend
+│   ├── main.py                    # Main API entry
+│   ├── main2.py                   # Experimental or alternate API route
+│   ├── groq_utils.py              # GROQ/LLM-based utilities
+│   ├── mood_utils.py              # Sentiment & behavior tracking logic
+│   ├── portfolio_utils.py         # Portfolio management utilities
+│   ├── snowflake_utils.py         # Snowflake database interaction helpers
+│   ├── test_fast.py               # FastAPI test runner
+│   └── requirements.txt           # Backend dependencies
+
+├── frontend/                      # React frontend
+│   ├── public/                    # Static files
+│   ├── src/                       # Main app source
+│   │   ├── components/           # Reusable UI components
+│   │   ├── pages/                # Route-specific page components
+│   │   ├── App.js                # App entry point
+│   │   ├── index.js              # ReactDOM render
+│   │   ├── App.css / index.css   # Global styles
+│   │   └── logo.svg              # App logo
+│   ├── README.md
+│   ├── package.json              # Project config & scripts
+│   └── package-lock.json
+
+├── .gitignore
+├── README.md                     # Project overview and instructions
+
+**Backend Setup (FastAPI)**
+bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 5000
+
+**Frontend Setup (React)**
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+
+**Open in Browser**
+bash
+Copy
+Edit
+http://localhost:3000
+
+
+🧩 Key Architecture Highlights
+Real-Time Data: Pulled from Snowflake and visualized in the dashboard.
+
+ML Integration: Forecast liquidity & optimize portfolios.
+
+LLM-Enhanced Behavior Insights: Combine journaling, NLP, and emotion tagging for smarter investing.
+
+Secure & Scalable: Modular backend + cloud-based data infrastructure.
+
 
