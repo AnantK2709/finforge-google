@@ -44,7 +44,7 @@ In today's turbulent markets, businesses are struggling with cash flow issues, o
 - **Snowflake** – Real-time, cloud-native data warehouse
 - **Prophet** – ML-based time series forecasting for liquidity projection
 - **Pydantic** – Data validation and synthetic data generation
-- **Markowitz Model** – Machine learning-based portfolio optimization
+- **Markowitz Model** – Machine learning-based portfolio optimization model paired with LLM for user inpt to json creation .
 - **Groq API + LLaMA 3** – LLM integration for behavioral & financial insight generation
 - **TextBlob** – NLP-based sentiment analysis for journaling data
 - **Uvicorn** – ASGI server for fast async app deployment
@@ -115,7 +115,8 @@ npm start
 http://localhost:3000
 ```
 
-🧩 Key Architecture Highlights
+
+🧩 **Key Architecture Highlights**
 Real-Time Data: Pulled from Snowflake and visualized in the dashboard.
 
 ML Integration: Forecast liquidity & optimize portfolios.
